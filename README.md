@@ -101,17 +101,6 @@ converter
 ✅ Convert between multiple formats: **PNG, JPG, GIF, WEBP, TIFF, JP2, BMP, HEIC**  
 ✅ Supports **Base64 encoding and decoding**  
 ✅ Uses **ImageMagick** for high-quality image transformations  
-✅ **TypeScript support** for better developer experience  
-✅ Handles **error detection and logging**
-
----
-
-## 📜 Best Practices
-
-- **Ensure ImageMagick is installed** before running conversions.
-- **Validate image formats** before conversion.
-- **Use async/await** to handle promises efficiently.
-- **Handle exceptions** to prevent crashes.
 
 ---
 
