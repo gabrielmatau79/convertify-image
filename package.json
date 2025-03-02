@@ -43,9 +43,5 @@
     "typescript": "^5.0.0",
     "typescript-eslint": "^8.25.0"
   },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node"
-  },
   "packageManager": "pnpm@10.5.2"
 }
