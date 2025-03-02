@@ -18,10 +18,8 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
-          cache: 'pnpm'
 
-      - name: 🚀 Install pnpm (specific version)
-        uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
         with:
           version: 10.5.2
 
