@@ -1,0 +1,51 @@
+{
+  "name": "convertify-image",
+  "version": "1.0.0",
+  "description": "A TypeScript library for converting images between formats using Base64 and ImageMagick.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint 'src/**/*.ts' --fix",
+    "format": "prettier --write 'src/**/*.ts'",
+    "test": "pnpm tsx test/test.ts",
+    "test:watch": "jest --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm run lint && pnpm run format && pnpm run build && pnpm test",
+    "release": "pnpm version patch && pnpm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrielmatau79/convertify-image.git"
+  },
+  "keywords": [
+    "image",
+    "conversion",
+    "base64",
+    "typescript",
+    "imagemagick",
+    "jp2"
+  ],
+  "author": "Gabriel Mata",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.0.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "eslint": "^8.57.1",
+    "globals": "^16.0.0",
+    "jest": "^29.0.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.0.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.25.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "packageManager": "pnpm@10.5.2"
+}
